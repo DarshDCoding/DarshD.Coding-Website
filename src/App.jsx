@@ -1,13 +1,17 @@
-import {Button} from '@/components/ui/button'
+import HomePage from "@/pages/HomePage.jsx";
+import AboutMe from "@/pages/AboutMe.jsx";
+import { Routes, Route } from "react-router";
 import './App.css'
 
 function App() {
+
   return (
-    <>
-        <h1 className="text-3xl font-bold underline">
-            Radhe Radhe...
-        </h1>
-    </>
+      <>
+          <Routes>
+              <Route index  element={<HomePage/>} />
+              <Route path="/about" element={<AboutMe/>} />
+          </Routes>
+      </>
   )
 }
 
