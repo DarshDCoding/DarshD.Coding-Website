@@ -5,7 +5,8 @@ export default function AboutMe() {
         <>
             <NavBar/>
             <h1 className="text-center">
-                I dont know what to talk about, yet....
+                Should i share with you my contact?
+                ok... its darshdcoding@gmail.com
             </h1>
         </>
 

@@ -1,5 +1,10 @@
+import NavBar from "@/components/NavigationBar.jsx";
+
 export default function HomePage() {
     return (
-        <h1>Radhe Radhe</h1>
+        <>
+        <NavBar/>
+        <h1 className="text-center">Radhe Radhe</h1>
+        </>
     )
 }
