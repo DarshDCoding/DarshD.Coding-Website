@@ -7,7 +7,7 @@ import {NavLink} from "react-router";
 import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet";
 import {Button} from "@/components/ui/button.jsx";
 import {Menu} from "lucide-react";
-import logo from '../../assets/logo.png';
+import logo from '../assets/DDC-name-black-cropped.png';
 
 export default function NavBar() {
     const links =[
