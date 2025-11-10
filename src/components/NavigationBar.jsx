@@ -18,7 +18,7 @@ export default function NavBar() {
         <header className="w-[100vw] h-[20vh] flex justify-center items-center">
             <nav className="w-[80vw] md:max-w-[600px] lg:max-w-[1000px] flex justify-between items-center navbar">
                 <div id="web-logo-container">
-                    <img className="h-14" src="src/assets/DDC-name-black-cropped.png" alt="Logo" />
+                    <img className="h-14" src="../assets/DDC-name-black-cropped.png" alt="Logo" />
                 </div>
 
                 {/*For Desktop*/}
