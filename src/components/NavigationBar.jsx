@@ -12,8 +12,9 @@ import logo from '../assets/DDC-name-black-cropped.png';
 export default function NavBar() {
     const links =[
         {to:'/', label:'Home'},
+        {to:'/frontend_gallery', label:'Frontend Gallery'},
         {to:'/about', label:'About'},
-        {to:'/contact', label:'Contact'}
+        {to:'/contact', label:'Contact'},
     ]
     return(
         <header className="w-[100vw] h-[20vh] flex justify-center items-center">
@@ -26,7 +27,13 @@ export default function NavBar() {
                 <NavigationMenu className=" self-flex-end">
                  <NavigationMenuList>
                      {links.map(link => (
-                         <NavLink to={link.to} className="hidden md:block"> <NavigationMenuLink className="font-primary font-[600] h-full w-full "> {link.label} </NavigationMenuLink> </NavLink>
+                         <NavLink to={link.to}
+                                  className={({ isActive }) =>
+                                      `hidden md:block text-lg font-medium transition-colors hover:text-primary ${
+                                          isActive ? "text-primary border-b-2 border-gray-800" : "text-muted-foreground"
+                                      }`
+                                  }
+                         > <NavigationMenuLink className="font-primary font-[600] h-full w-full "> {link.label} </NavigationMenuLink> </NavLink>
                      ))}
                  </NavigationMenuList>
                 </NavigationMenu>
