@@ -8,6 +8,8 @@
 @theme{
     --font-primary: 'Elms Sans', sans-serif;
     --font-decorative: 'IBM Plex Mono', cursive;
+
+    --scale-up: scale(105%);
 }
 
 @theme inline {
