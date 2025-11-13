@@ -14,11 +14,26 @@ import {
 } from "@/components/ui/card";
 import digiCard from "/ImageGallery/DigiCard.png"
 import backgroundImg from "/ImageGallery/backgroundImgBg.png"
+import {NavLink} from "react-router";
 
 export default function FrontEndGallery() {
+    const cards = [
+        {
+            img:"image",
+            title: "title",
+            techStack: ["HTML", "CSS", "JS"],
+            description: "description",
+            visitLink: "visitLink",
+            SourceLink: "SourceLink",
+        },
+    ]
+
     return(
         <>
         <NavBar/>
+            <div id="container" className="w-[100vw] flex justify-center">
+            <div id="cards-container" className="w-[80vw] md:max-w-[600px] lg:max-w-[100px] flex flex-col md:flex-row justify-center gap-2 ">
+                {cards.map((card) => (
             <Card className="w-[20rem] p-0 border-1 border-gray-650 rounded-t-xl">
                 <CardHeader className='w-full p-0'>
                     <div
@@ -32,21 +47,38 @@ export default function FrontEndGallery() {
                     </div>
                 </CardHeader>
                 <CardContent className="flex flex-col w-full gap-2">
-                    <CardTitle className="text-[25px] font-bold font-primary">Digital Visiting Card</CardTitle>
+                    <CardTitle className="text-[25px] font-bold font-primary">{card.title}</CardTitle>
                     <div id="tech-stack">
-                        <span className="text-[15px]">HTML</span>
-                        <span className="text-[15px]">CSS</span>
-                        <span className="text-[15px]">JS</span>
+                        {card.techStack.map((techStack, index) => (
+                        <span className="text-[15px]">{techStack}</span>
+                        ))}
                     </div>
-                    <CardDescription className="text-[12px]">
-                        This is something i dont know what am i typing please don't mind it, it happens all the time i am thinking of doing something about it but i am too lazy to even think now this much text should be enough to cheack how it is looking.
+                    <CardDescription className="text-[12px]">{card.description}
                     </CardDescription>
                 </CardContent>
                 <CardFooter className="flex justify-start gap-2 mb-4">
-                    <CardAction> <Button className="bg-red-600 hover:bg-red-400 hover:text-gray-800">{HiArrowUpRight()} Visit Site</Button></CardAction>
-                    <CardAction> <Button>{FaGithub()} Source Code</Button></CardAction>
+                    <CardAction>
+                        <a
+                        href="https://www.google.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <Button className="bg-red-600 hover:bg-red-400 hover:text-gray-800">{HiArrowUpRight()} Visit Site</Button>
+                    </a>
+                    </CardAction>
+                    <CardAction>
+                        <a
+                            href="https://www.google.com"
+                            rel="noopener noreferrer"
+                        >
+                        <Button>{FaGithub()} Source Code</Button>
+                        </a>
+                        </CardAction>
                 </CardFooter>
             </Card>
+                ))}
+            </div>
+            </div>
         </>
     )
 }
