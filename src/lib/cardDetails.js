@@ -16,9 +16,9 @@ const cards = [
         file: "TestimonialGrid.jpg"
     },
     {
-        title: "Muft Ka Gyaan - Quote generator",
+        title: "Muft Ka Gyaan",
         techStack: ["HTML", "CSS", "JS"],
-        description: "A quote generator, a frontend mentor project that I have completed to get to know how API works.",
+        description: "A quote generator, a frontend mentor project that I have completed to get to know how API works and use it.",
         url: "https://darshdcoding.github.io/MuftKaGyaanAngreziMein/",
         SourceLink: "https://github.com/DarshDCoding/MuftKaGyaanAngreziMein",
         file: "MuftKaGyaan.jpg"
@@ -31,7 +31,6 @@ const cards = [
         SourceLink: "https://github.com/DarshDCoding/ContactFormUsingVenillaJS",
         file: "ContactForm.jpg"
     },
-
 ]
 
 export default cards;
