@@ -1,40 +1,37 @@
 const cards = [
     {
-        img:"image",
-        title: "title",
+        title: "Digital Card",
         techStack: ["HTML", "CSS", "JS"],
-        description: "description",
+        description: "A digital card, this is a frontend mentor project that I have completed and added a glowing gradiant border as a extra step. ",
         url: "https://darshdcoding.github.io/ALinkCardWithGlowingjShadow/",
-        SourceLink: "SourceLink",
+        SourceLink: "https://github.com/DarshDCoding/ALinkCardWithGlowingjShadow",
         file: "GlowingShadowLinkCard.jpg"
     },
     {
-        img:"image",
-        title: "title",
+        title: "Tenstimonial Grid",
         techStack: ["HTML", "CSS", "JS"],
-        description: "description",
+        description: "A testimonial grid, a frontend mentor project that I have completed to practice working CSS grid after a long time.",
         url: "https://darshdcoding.github.io/TestimonialGridUsingCSSGrid/",
-        SourceLink: "SourceLink",
+        SourceLink: "https://github.com/DarshDCoding/TestimonialGridUsingCSSGrid",
         file: "TestimonialGrid.jpg"
     },
     {
-        img:"image",
-        title: "title",
+        title: "Muft Ka Gyaan - Quote generator",
         techStack: ["HTML", "CSS", "JS"],
-        description: "description",
+        description: "A quote generator, a frontend mentor project that I have completed to get to know how API works.",
         url: "https://darshdcoding.github.io/MuftKaGyaanAngreziMein/",
-        SourceLink: "SourceLink",
+        SourceLink: "https://github.com/DarshDCoding/MuftKaGyaanAngreziMein",
         file: "MuftKaGyaan.jpg"
     },
     {
-        img:"image",
-        title: "title",
+        title: "Contact Form",
         techStack: ["HTML", "CSS", "JS"],
-        description: "description",
+        description: "A contact form, a frontend project for handeling forms using venilla JS.",
         url: "https://darshdcoding.github.io/ContactFormUsingVenillaJS/",
-        SourceLink: "SourceLink",
+        SourceLink: "https://github.com/DarshDCoding/ContactFormUsingVenillaJS",
         file: "ContactForm.jpg"
     },
+
 ]
 
 export default cards;

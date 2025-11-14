@@ -12,7 +12,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
-import digiCard from "/ImageGallery/DigiCard.png"
+// import digiCard from "/ImageGallery/DigiCard.png"
 import backgroundImg from "/ImageGallery/backgroundImgBg.png"
 import {NavLink} from "react-router";
 
@@ -24,7 +24,7 @@ export default function FrontEndGallery() {
         <>
         <NavBar/>
             <div id="container" className="w-[100vw] flex justify-center">
-            <div id="cards-container" className="w-[80vw] md:max-w-[600px] lg:max-w-[100px] flex flex-col md:flex-row justify-center gap-2 ">
+            <div id="cards-container" className="w-[80vw] md:max-w-[600px] lg:max-w-[100px] flex flex-col md:flex-row justify-center gap-2">
                 {cards.map((card) => (
             <Card className="w-[20rem] p-0 border-1 border-gray-650 rounded-t-xl">
                 <CardHeader className='w-full p-0'>
@@ -33,7 +33,7 @@ export default function FrontEndGallery() {
                         style={{ backgroundImage: `url(${backgroundImg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                         <div className="absolute inset-0 bg-black/40 " /> {/* overlay */}
                         <div className="rounded overflow-hidden  hover:transform-(--scale-up) duration-200 ">
-                        <img src={digiCard} alt="DigiCard" className="relative z-10 mx-auto "
+                        <img src={`/ImageGallery/${card.file}`} alt="DigiCard" className="relative z-10 mx-auto "
                         loading="lazy"/>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ export default function FrontEndGallery() {
                 <CardContent className="flex flex-col w-full gap-2">
                     <CardTitle className="text-[25px] font-bold font-primary">{card.title}</CardTitle>
                     <div id="tech-stack">
-                        {card.techStack.map((techStack, index) => (
+                        {card.techStack.map((techStack) => (
                         <span className="text-[15px]">{techStack}</span>
                         ))}
                     </div>
@@ -51,7 +51,7 @@ export default function FrontEndGallery() {
                 <CardFooter className="flex justify-start gap-2 mb-4">
                     <CardAction>
                         <a
-                        href="https://www.google.com"
+                        href={card.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         >
