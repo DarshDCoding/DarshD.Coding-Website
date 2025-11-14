@@ -16,17 +16,9 @@ import digiCard from "/ImageGallery/DigiCard.png"
 import backgroundImg from "/ImageGallery/backgroundImgBg.png"
 import {NavLink} from "react-router";
 
+import cards from "@/lib/cardDetails.js"
+
 export default function FrontEndGallery() {
-    const cards = [
-        {
-            img:"image",
-            title: "title",
-            techStack: ["HTML", "CSS", "JS"],
-            description: "description",
-            visitLink: "visitLink",
-            SourceLink: "SourceLink",
-        },
-    ]
 
     return(
         <>
