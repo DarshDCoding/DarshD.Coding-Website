@@ -6,7 +6,7 @@ import path from "path";
 async function takeScreenshot(url, fileName) {
     try {
         // Path where Chrome for Testing is installed
-        const executablePath = "D:\\DarshD.Coding-website\\DarshD.Coding-website\\chrome\\win64-144.0.7526.3\\chrome-win64\\chrome.exe";
+        const executablePath = "D:\\DarshD.Coding-website\\DarshD.Coding-website\\chrome\\win64-144.0.7529.0\\chrome-win64\\chrome.exe";
 
         // Launch browser
         const browser = await puppeteer.launch({
