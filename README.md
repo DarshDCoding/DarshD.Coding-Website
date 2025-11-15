@@ -11,5 +11,11 @@ From vite.config.js in root direcotry.
 node runAll.js
 ```
 
+```bash
+npx @puppeteer/browsers install chrome --path
+```
+copy the path provided to executablePath inside screenshot.js
+
+
 
 
