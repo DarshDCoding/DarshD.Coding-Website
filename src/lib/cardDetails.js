@@ -9,7 +9,7 @@ const cards = [
     },
     {
         title: "Tenstimonial Grid",
-        techStack: ["HTML", "CSS", "JS"],
+        techStack: ["HTML", "CSS", "JS", "React"],
         description: "A testimonial grid, a frontend mentor project that I have completed to practice working CSS grid after a long time.",
         url: "https://darshdcoding.github.io/TestimonialGridUsingCSSGrid/",
         SourceLink: "https://github.com/DarshDCoding/TestimonialGridUsingCSSGrid",
