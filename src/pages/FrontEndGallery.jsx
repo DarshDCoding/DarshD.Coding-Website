@@ -1,6 +1,7 @@
 import NavBar from "@/components/NavigationBar.jsx";
 import FrontendCard from "@/components/FrontendCard.jsx";
 import cards from "@/lib/cardDetails.js"
+import Footer from "@/components/Footer.jsx";
 
 export default function FrontEndGallery() {
     return(
@@ -11,6 +12,7 @@ export default function FrontEndGallery() {
                 <FrontendCard card={card} />
             ))}
         </main>
+            <Footer/>
         </>
     )
 }

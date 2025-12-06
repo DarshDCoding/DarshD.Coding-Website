@@ -1,4 +1,4 @@
-import HomePage from "@/pages/HomePage.jsx";
+import HomePage from "@/pages/HomePage/HomePage.jsx";
 import FrontEndGallery from "@/pages/FrontEndGallery.jsx";
 import AboutMe from "@/pages/AboutMe.jsx";
 import ContactPage from "@/pages/ContactPage.jsx"

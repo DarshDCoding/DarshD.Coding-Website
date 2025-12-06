@@ -1,4 +1,5 @@
 import NavBar from "@/components/NavigationBar.jsx";
+import Footer from "@/components/Footer.jsx";
 
 export default function AboutMe() {
     return (
@@ -8,6 +9,7 @@ export default function AboutMe() {
                 Should i share with you my contact?
                 ok... its darshdcoding@gmail.com
             </h1>
+            <Footer/>
         </>
 
     )
