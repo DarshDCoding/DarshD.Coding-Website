@@ -30,7 +30,7 @@ export default function NavBar() {
                          <NavLink to={link.to}
                                   className={({ isActive }) =>
                                       `hidden md:block text-lg font-medium transition-colors hover:text-primary ${
-                                          isActive ? "text-primary border-b-2 border-gray-800" : "text-muted-foreground"
+                                          isActive ? "text-primary border-b-4 border-cyan-500" : "text-muted-foreground"
                                       }`
                                   }
                          > <NavigationMenuLink className="font-primary font-[600] h-full w-full "> {link.label} </NavigationMenuLink> </NavLink>
@@ -42,7 +42,7 @@ export default function NavBar() {
                 <Sheet>
                     <SheetTrigger className="md:hidden">
                         <Button variant="ghost" size="icon" className="md:hidden">
-                            <Menu className="h-5 w-5"/>
+                            <Menu className="text-cyan-500 size-8"/>
                             <span className="sr-only">Open Menu</span>
                         </Button>
                     </SheetTrigger>
