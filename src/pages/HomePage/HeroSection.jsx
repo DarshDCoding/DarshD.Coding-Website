@@ -176,7 +176,7 @@ const DigitalBlueprintHero = () => {
     }, [text, isDeleting, loopNum, contentTypes, typingSpeed]);
 
     return (
-        <div className="relative h-auto flex flex-col md:flex-row bg-white dark:bg-white overflow-hidden font-sans py-8 md:py-16 px-4 sm:px-8">
+        <div className="relative h-auto flex flex-col md:flex-row bg-white dark:bg-white overflow-hidden font-sans md:py-16 px-4 sm:px-8">
             <div className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 md:gap-16 lg:gap-20">
 
                 {/*Left Area Content*/}
