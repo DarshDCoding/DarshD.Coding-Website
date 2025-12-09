@@ -60,7 +60,6 @@ const CodeSnippet = () => {
 
 
     // 4. Generate line numbers dynamically based on the currently displayed code
-    // CHANGED: Line numbers are now dynamic, growing with the content.
     const currentLineCount = displayedCode.split('\n').length;
     // Ensure line numbering starts at 1, even if the code is empty.
     const lineNumbers = Array.from({ length: currentLineCount || 1 }, (_, i) => i + 1);
@@ -217,20 +216,27 @@ const DigitalBlueprintHero = () => {
                     {/* Call to Action Buttons */}
                     <div className="mt-8 flex flex-wrap gap-3 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
 
-                        {/* Primary Button - Github */}
-                        <button className="group flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-semibold py-2 px-4 md:py-3 md:px-6 text-sm md:text-base rounded-full transition-all duration-300 shadow-xl shadow-blue-500/30 transform hover:scale-[1.02] active:scale-95 ring-4 ring-blue-500/20">
+                        {/* Primary Button - Get in Touch */}
+                        <button className="group flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold py-2 px-4 md:py-3 md:px-6 text-sm md:text-base rounded-full transition-all duration-300 shadow-xl shadow-gray-500/30 transform hover:scale-[1.02] active:scale-95 ring-4 ring-blue-800/20"> Get in Touch
+                            <ArrowRight className="w-3 h-3 md:w-4 md:h-4 ml-1 transition-transform group-hover:translate-x-1" />
+                        </button>
+
+                        {/* Primary Button - Github*/}
+                        <button className="group flex items-center gap-2 bg-gray-900 text-white font-semibold py-2 px-4 md:py-3 md:px-6 text-sm md:text-base rounded-full transition-all duration-300 shadow-xl shadow-gray-500/30 transform hover:scale-[1.02] active:scale-95">
                             <Github className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:rotate-6" /> View My Code
                             <ArrowRight className="w-3 h-3 md:w-4 md:h-4 ml-1 transition-transform group-hover:translate-x-1" />
                         </button>
 
-                        {/* Secondary Button 1 (Vlog) */}
-                        <button className="flex items-center gap-2 px-4 py-2 md:py-3 md:px-6 text-sm md:text-base rounded-full text-red-400 dark:text-red-300 bg-red-500/10 hover:bg-red-500/20 transition-colors border border-red-500/50 dark:border-red-400/50">
-                            <Video className="w-4 h-4 md:w-5 md:h-5 text-red-500 dark:text-red-400" /> Watch Vlog
+                        {/* Primary Button - Blog */}
+                        <button className="group flex items-center gap-2  font-semibold py-2 px-4 md:py-3 md:px-6 text-sm md:text-base rounded-full text-yellow-500 dark:text-yellow-300 bg-yellow-500/10 hover:bg-yellow-500/20 border border-yellow-500/50 dark:border-yellow-400/50  transition-all duration-300 shadow-xl shadow-gray-500/30 transform hover:scale-[1.02] active:scale-95">
+                            <FileText className="w-4 h-4 md:w-5 md:h-5 text-yellow-500 dark:text-yellow-400" /> Read Blog
+                            <ArrowRight className="w-3 h-3 md:w-4 md:h-4 ml-1 transition-transform group-hover:translate-x-1" />
                         </button>
 
-                        {/* Secondary Button 2 (Blog) */}
-                        <button className="flex items-center gap-2 px-4 py-2 md:py-3 md:px-6 text-sm md:text-base rounded-full text-yellow-500 dark:text-yellow-300 bg-yellow-500/10 hover:bg-yellow-500/20 transition-colors border border-yellow-500/50 dark:border-yellow-400/50">
-                            <FileText className="w-4 h-4 md:w-5 md:h-5 text-yellow-500 dark:text-yellow-400" /> Read Blog
+                        {/* Primary Button - Vlog */}
+                        <button className="group flex items-center gap-2  font-semibold py-2 px-4 md:py-3 md:px-6 text-sm md:text-base rounded-full text-red-400 dark:text-red-300 bg-red-500/10 hover:bg-red-500/20 border border-red-500/50 dark:border-red-400/50  transition-all duration-300 shadow-xl shadow-gray-500/30 transform hover:scale-[1.02] active:scale-95">
+                            <Video className="w-4 h-4 md:w-5 md:h-5 text-red-500 dark:text-red-400" /> Watch Vlog
+                            <ArrowRight className="w-3 h-3 md:w-4 md:h-4 ml-1 transition-transform group-hover:translate-x-1" />
                         </button>
                     </div>
 

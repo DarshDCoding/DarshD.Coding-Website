@@ -12,7 +12,6 @@ export default function HomePage() {
             <HeroSection/>
             </div>
             </div>
-            <h1 className="text-center">Radhe Radhe</h1>
         </>
     )
 }
