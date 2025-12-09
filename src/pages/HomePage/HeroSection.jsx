@@ -146,7 +146,7 @@ const DigitalBlueprintHero = () => {
     const contentTypes = [
         "Latest Projects (Code)",
         "New Vlogs (Video)",
-        "Technical Blogs (Writing)",
+        "New Blogs (Writing)",
         "Latest Updates"
     ];
 
