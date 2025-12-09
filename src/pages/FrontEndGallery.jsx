@@ -12,7 +12,6 @@ export default function FrontEndGallery() {
                 <FrontendCard card={card} />
             ))}
         </main>
-            <Footer/>
         </>
     )
 }
