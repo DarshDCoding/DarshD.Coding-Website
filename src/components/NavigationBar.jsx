@@ -54,7 +54,7 @@ export default function NavBar() {
                                 to={link.to}
                                 className={({ isActive }) =>
                                     ` text-lg font-medium transition-colors hover:text-primary ${
-                                        isActive ? "text-primary" : "text-muted-foreground"
+                                        isActive ? "text-primary border-l-4 border-cyan-500 pl-6 py-2" : "text-muted-foreground pl-6 py-2"
                                     }`
                                 }
                             >
