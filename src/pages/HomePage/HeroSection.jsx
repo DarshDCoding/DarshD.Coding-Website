@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { ArrowRight, FileText, Video, Github } from 'lucide-react';
+import { ArrowRight, FileText, Video, Github, MessageSquareText } from 'lucide-react';
 
 // --- Placeholder for CodeSnippet Component (Continuous Loop, 10 Lines Max) ---
 const CodeSnippet = () => {
@@ -208,7 +208,6 @@ const DigitalBlueprintHero = () => {
                         <span className="mr-3 text-gray-500 dark:text-gray-500 font-sans font-medium tracking-widest text-sm uppercase mb-2 sm:mb-0">Check out my ::</span>
                         <div className="flex items-center">
                             <span className="text-cyan-600 dark:text-cyan-300 font-semibold">{text}</span>
-                            {/* Cursor: Removed rounded-sm for a sharp look */}
                             <span className="w-2 h-5 bg-cyan-600 dark:bg-cyan-400 ml-1 animate-blink shadow-[0_0_10px_rgba(6,182,212,0.8)]"></span>
                         </div>
                     </div>
@@ -217,7 +216,8 @@ const DigitalBlueprintHero = () => {
                     <div className="mt-8 flex flex-wrap gap-3 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
 
                         {/* Primary Button - Get in Touch */}
-                        <button className="group flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold py-2 px-4 md:py-3 md:px-6 text-sm md:text-base rounded-full transition-all duration-300 shadow-xl shadow-gray-500/30 transform hover:scale-[1.02] active:scale-95 ring-4 ring-blue-800/20"> Get in Touch
+                        <button className="group flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold py-2 px-4 md:py-3 md:px-6 text-sm md:text-base rounded-full transition-all duration-300 shadow-xl shadow-gray-500/30 transform hover:scale-[1.02] active:scale-95 ring-4 ring-blue-800/20">
+                            <MessageSquareText className="w-4 h-4 md:w-5 md:h-5" /> Get in Touch
                             <ArrowRight className="w-3 h-3 md:w-4 md:h-4 ml-1 transition-transform group-hover:translate-x-1" />
                         </button>
 
