@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { ArrowRight, FileText, Video, Github, MessageSquareText } from 'lucide-react';
+import {Link} from "react-router";
 
 // --- Placeholder for CodeSnippet Component (Continuous Loop, 10 Lines Max) ---
 const CodeSnippet = () => {
@@ -146,7 +147,7 @@ const DigitalBlueprintHero = () => {
     const contentTypes = [
         "Latest Projects (Code)",
         "New Vlogs (Video)",
-        "New Blogs (Writing)",
+        "Tech Blogs (Writing)",
         "Latest Updates"
     ];
 
@@ -222,10 +223,12 @@ const DigitalBlueprintHero = () => {
                         </button>
 
                         {/* Primary Button - Github*/}
+                        <Link to={"https://github.com/DarshDCoding"}>
                         <button className="group flex items-center gap-2 bg-gray-900 text-white font-semibold py-2 px-4 md:py-3 md:px-6 text-sm md:text-base rounded-full transition-all duration-300 shadow-xl shadow-gray-500/30 transform hover:scale-[1.02] active:scale-95">
                             <Github className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:rotate-6" /> View My Code
                             <ArrowRight className="w-3 h-3 md:w-4 md:h-4 ml-1 transition-transform group-hover:translate-x-1" />
                         </button>
+                        </Link>
 
                         {/* Primary Button - Blog */}
                         <button className="group flex items-center gap-2  font-semibold py-2 px-4 md:py-3 md:px-6 text-sm md:text-base rounded-full text-yellow-500 dark:text-yellow-300 bg-yellow-500/10 hover:bg-yellow-500/20 border border-yellow-500/50 dark:border-yellow-400/50  transition-all duration-300 shadow-xl shadow-gray-500/30 transform hover:scale-[1.02] active:scale-95">
